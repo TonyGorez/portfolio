@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Javascript Engineer</title>
+	<meta charset="UTF-8" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet" />
+	<style>
+	 body { font-family: sans-serif; cursor: url('./cursor.png'), auto; } a { text-decoration: none; color: black; font-weight: 600;} .container { cursor: url('./cursor.png'), auto; } .titles { font-family: "Montserrat"; position: fixed; top: 34%; left: 10%; } .name { cursor: url('./cursor.png'), auto; font-size:
+	7.9vw; font-weight: 700; margin: -30px 0px 0px 0px; } .underscore { color: red; } h1 { font-weight: 500; font-size: 2vw;
+	} .content { cursor: url('./cursor.png'), auto; position: absolute; top: 100vh; left: 50%; right: 10%; padding-bottom: 34vh; overflow: auto; } .intro { font-size:
+	2.2vw; line-height: 140%; margin-bottom: 10%; } .description { font-size: 1.2vw; line-height: 180%; font-family: "Open Sans";
+	} .flash { -webkit-animation: flash linear 1s infinite; animation: flash linear 1s infinite; } @keyframes flash { 0% { opacity:
+	1; } 50% { opacity: 0.1; } 100% { opacity: 1; } } @-o-keyframes flash { 0% { opacity: 1; } 50% { opacity: 0.1; } 100% { opacity:
+	1; } } @-moz-keyframes flash { 0% { opacity: 1; } 50% { opacity: 0.1; } 100% { opacity: 1; } } @-webkit-keyframes flash {
+	0% { opacity: 1; } 50% { opacity: 0.1; } 100% { opacity: 1; } } @media (max-width: 900px) { .name { font-size: 18vw; } h1
+	{ font-size: 2.5vw; } .content { left: 0; right: 0; background: #fff; padding: 10%; } .intro { font-size: 3.2vw; } .description
+	{ font-size: 2.5vw; } }
+  </style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="head">
+			<div class="titles">
+				<span class="name">tonygo</span><span class="name underscore flash">_</span>
+          <h1>Just a coder, I suppose ...</h1>
+        </div>
+      </div>
+      <div class="content">
+        <p class="intro">
+          Hi, my name is <b>Tony Gorez</b>, I'm a <b>javascript</b>
+          engineer based in Paris <span class="underscore flash">_<span/>
+        </p>
+        <p class="description">
+          I spend the most of my time on the web aiming to understand how he works. By this way I became a full time developer. I don’t
+          get a classic computer science background. I just started coding few hours on my rainy Sunday afternoon. Then I was coding
+          at morning (before work), then at lunch time too, then before bedtime too. 
+        </p>
+        <p class="description">
+          I like to solve problems as much as coding. Each
+          time I use javascript libraries (as ReactJs or ExpressJs), I’m trying to understand the “how” and the “why”. More than just
+          a personal curiosity aspect, I want to be able to choose the right solution for the right problem. This is for me the best
+          definition of what an engineer is. 
+        </p>
+        <p class="description">
+          Javascript is becoming my new playground, and modern server side libraries are my new
+          toys. For the last 2 years I worked on a complex chat application as Slack that provide video and audio call in white mark.
+          Thanks to this background, I explored different ways to design front end applications surrounded by senior javascript engineers.
+        </p>
+        <p class="description">
+          In addition to my full time job I spend a part of my free time on monitoring open source packages and try them in my local
+          environment. I am aware of subjects as distributed systems and browser peer communication, I hope to get in more for the
+          next years. 
+        </p>
+        <p class="description">
+          Please let me know if you want to discuss on <a href="https://twitter.com/tonygo_">Twitter</a>, <a href="https://www.linkedin.com/in/tonygorez">Linkedin</a>.
+        </p>
+        <p class="description">
+        Hope to see you on <a href="https://github.com/TonyGorez">GitHub</a> or <a href="https://medium.com/@GorezTony">Medium</a>.
+        </p>
+      </div>
+    </div>
+    <script>
+	 window.addEventListener("scroll", handleScroll); 
+   function handleScroll() { 
+     const target = document.getElementsByClassName("name underscore flash")[0];
+     target.className = "name underscore";
+     window.removeEventListener("scroll", handleScroll); 
+    }
+    </script>
+  </body>
+</html>
